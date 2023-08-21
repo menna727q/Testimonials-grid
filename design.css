@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+*{font-family: 'BarlowSemiCondensed', sans-serif}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 13px;
+    background: hsl(210, 46%, 95%);
+    
+}
+.Textdiv{
+    width: 1200px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr) ;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+} 
+.Daniel,
+.jeanette,
+.Jonathan,
+.Kira,
+.Patrick{
+    padding: 20px;
+    border-radius: 9px;
+}
+.Daniel{
+    grid-area: 1 / 1 / 2 / 3 ;
+    background:hsl(263, 55%, 52%) ;
+   /* border-radius: 5px;*/
+    background-image: url(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 18%;
+}
+.Jonathan{
+    grid-area: 1 / 3 / 2 / 4;
+    background: hsl(217, 19%, 35%);
+   /* border-radius: 5px;*/
+   
+   
+}
+.Kira{
+    grid-area: 1 / 4 / 3 / 5;
+    background:  hsl(0, 0%, 100%);
+   /* border-radius: 5px;*/
+   
+    
+}
+.jeanette{
+    grid-area: 2 / 1 / 3 / 2;
+    background: white;
+   /* border-radius: 5px;*/
+   
+    
+}
+.Patrick{
+    grid-area: 2 / 2 / 3 / 4;
+    background: hsl(219, 29%, 14%);
+   /* border-radius: 5px;*/
+   
+  
+}
+.Patrick .hh{
+    display: flex;
+    flex-direction: column;
+}
+.imagesd{
+    border-radius: 50%;
+    width: 50px;
+    
+}
+.one-thing{
+    display: flex;
+   align-items: center;
+   padding-bottom: 10px;
+}
+.parag{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 100;
+    font-size: small;
+    line-height: 1.2rem;
+}
+.hh1{
+    padding-left: 20px;
+}
+.hh1 h4{
+    color: hsl(210, 46%, 95%);
+}
+.hh1 p{
+    color: hsl(210, 46%, 95%);
+    opacity: 50%;
+}
+.Bold-section1{
+font-weight: 600;
+color: hsl(210, 46%, 95%);
+font-size: 17px;
+margin-bottom: 1rem;
+}
+
+.parag1{
+    color: white;
+    opacity: 70%;
+padding-top: 10px;
+line-height: 1.2rem;
+}
+.hh{
+    padding-left: 20px;
+}
+.hh h4{
+    color:hsl(219, 29%, 14%);
+}
+.hh p{
+    color: hsl(219, 29%, 14%);
+    opacity: 50%;
+}
+.Bold-section{
+    color: hsl(217, 19%, 35%);
+    font-weight: 900;
+    
+}
+.parag{
+    color: hsl(217, 19%, 35%);
+    opacity: 70%;
+    padding-top: 20px;
+}
+.attribution { font-size: 11px; text-align: center; padding-top: 30px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media(max-width:568px)
+{
+    .Textdiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    .Daniel{
+        flex-basis: 40%;
+        width: 100%;
+    }
+    .attribution{
+        display: none;
+    }
+}
